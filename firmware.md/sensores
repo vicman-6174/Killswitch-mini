@@ -1,21 +1,37 @@
-# Firmware
+Sensores de línea (QTR)
 
-El firmware controla todo el comportamiento del robot durante el combate.
+El sistema emplea dos sensores reflectivos tipo QTR conectados a los pines digitales D2 y D4 del controlador XMotion V3. La lectura de estos sensores no se realiza mediante una conversión analógica convencional, sino mediante la medición del tiempo de descarga del capacitor interno del sensor, técnica característica de los sensores QTR-RC.
 
-## Funciones principales
+Principio de funcionamiento
 
-- Lectura de sensores
-- Control de motores
-- Selección de estrategia
-- Detección del borde
-- Ataque
-- Búsqueda
+La función encargada de la lectura es:
 
-## Organización
+int LeerQTR(int pin)
 
-El código está dividido en módulos para facilitar el mantenimiento.
+El procedimiento consiste en:
 
-- Sensores
-- Motores
-- Estrategias
-- Configuración
+Configurar el pin como salida y cargar el capacitor interno durante 10 μs.
+Cambiar el pin a modo entrada.
+Medir el número de iteraciones que el pin permanece en estado lógico alto.
+Limitar la medición a un máximo de 300 conteos.
+
+De esta forma:
+
+Mayor tiempo de descarga → mayor valor de lectura.
+Menor tiempo de descarga → menor valor de lectura.
+
+El rango efectivo de medición es:
+
+Estado	Valor aproximado
+Blanco	0–199
+Negro	200–300
+
+El algoritmo utiliza el siguiente umbral:
+
+int umbral = 199;
+
+La condición utilizada para detectar el borde del dojo es:
+
+if(leftLine < 199 || rightLine < 199)
+
+Por lo tanto, cualquier lectura inferior a 199 se interpreta como la detección de la línea blanca perimetral.
