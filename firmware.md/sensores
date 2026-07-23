@@ -1,0 +1,21 @@
+# Firmware
+
+El firmware controla todo el comportamiento del robot durante el combate.
+
+## Funciones principales
+
+- Lectura de sensores
+- Control de motores
+- Selección de estrategia
+- Detección del borde
+- Ataque
+- Búsqueda
+
+## Organización
+
+El código está dividido en módulos para facilitar el mantenimiento.
+
+- Sensores
+- Motores
+- Estrategias
+- Configuración
