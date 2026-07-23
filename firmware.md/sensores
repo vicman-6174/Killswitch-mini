@@ -1,37 +1,46 @@
-Sensores de línea (QTR)
+## Sensores de línea (QTR)
 
-El sistema emplea dos sensores reflectivos tipo QTR conectados a los pines digitales D2 y D4 del controlador XMotion V3. La lectura de estos sensores no se realiza mediante una conversión analógica convencional, sino mediante la medición del tiempo de descarga del capacitor interno del sensor, técnica característica de los sensores QTR-RC.
+El sistema emplea **dos sensores reflectivos tipo QTR-RC** conectados a los pines digitales **D2** y **D4** del controlador **XMotion V3**. La lectura de estos sensores no se realiza mediante una conversión analógica convencional, sino mediante la **medición del tiempo de descarga de un circuito RC**, técnica característica de los sensores QTR-RC.
 
-Principio de funcionamiento
+### Principio de funcionamiento
 
-La función encargada de la lectura es:
+La función encargada de realizar la lectura es:
 
+```cpp
 int LeerQTR(int pin)
+```
 
-El procedimiento consiste en:
+El procedimiento de medición consiste en:
 
-Configurar el pin como salida y cargar el capacitor interno durante 10 μs.
-Cambiar el pin a modo entrada.
-Medir el número de iteraciones que el pin permanece en estado lógico alto.
-Limitar la medición a un máximo de 300 conteos.
+1. Configurar el pin como salida y cargar el circuito RC durante **10 μs**.
+2. Cambiar el pin al modo entrada.
+3. Medir el número de iteraciones durante las cuales el pin permanece en estado lógico alto.
+4. Limitar la medición a un máximo de **300 conteos**.
 
 De esta forma:
 
-Mayor tiempo de descarga → mayor valor de lectura.
-Menor tiempo de descarga → menor valor de lectura.
+- **Mayor tiempo de descarga → mayor valor de lectura.**
+- **Menor tiempo de descarga → menor valor de lectura.**
 
-El rango efectivo de medición es:
+### Rango de medición
 
-Estado	Valor aproximado
-Blanco	0–199
-Negro	200–300
+| Superficie | Valor aproximado |
+|------------|-----------------:|
+| Blanco     | 0 – 199 |
+| Negro      | 200 – 300 |
 
-El algoritmo utiliza el siguiente umbral:
+### Umbral de detección
 
+El algoritmo emplea el siguiente umbral para identificar la línea blanca perimetral del dojo:
+
+```cpp
 int umbral = 199;
+```
 
-La condición utilizada para detectar el borde del dojo es:
+La condición utilizada es:
 
-if(leftLine < 199 || rightLine < 199)
+```cpp
+if (leftLine < umbral || rightLine < umbral)
+```
 
-Por lo tanto, cualquier lectura inferior a 199 se interpreta como la detección de la línea blanca perimetral.
+Cuando cualquiera de los sensores registra una lectura **inferior a 199**, el sistema interpreta que se ha detectado el borde del área de combate y ejecuta automáticamente la maniobra de evasión correspondiente.
