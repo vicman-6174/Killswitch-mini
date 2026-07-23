@@ -37,7 +37,7 @@ Diseñar un minisumo competitivo priorizando:
 ## Estado del proyecto
 
 - [x] Diseño CAD
-- [x] PCB terminada
+- [x] PCB soldada
 - [x] Diagramas de flujo
 - [ ] Programación
 - [ ] Pruebas
