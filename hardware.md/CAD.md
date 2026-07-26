@@ -34,7 +34,13 @@ El chasis del robot se diseñó como una sola pieza, lo que reduce ensambles, to
 
 ## 4 · Renders del modelo CAD
 
-<img width="461" height="428" alt="image" src="https://github.com/user-attachments/assets/b0e4dd90-7a49-449e-b8ce-1fe20d924a9c" />
+<p align="center">
+  <img
+    src="https://github.com/user-attachments/assets/b0e4dd90-7a49-449e-b8ce-1fe20d924a9c"
+    alt="image"
+    width="461"
+  />
+</p>
 
 *Figura 1. Vista inferior — cavidad de la placa de latón, ventanas de sensores QTR (frontal inferior) y rines de aluminio.*
 
