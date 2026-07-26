@@ -47,7 +47,7 @@ El chasis del robot se diseñó como una sola pieza, lo que reduce ensambles, to
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5db721bd-d1c4-49b4-a9c5-20c46fb1627b"
        alt="image"
-       width="400">
+       width="461">
 </p>
 
 *Figura 2. Vista isométrica — compartimento de electrónica/batería, alojamiento de motores y rin de aluminio en el eje.*
