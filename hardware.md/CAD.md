@@ -32,25 +32,31 @@ El chasis del robot se diseñó como una sola pieza, lo que reduce ensambles, to
 | Controladora | Alojamiento protegido para PCB XMotion con espacio para borneras + canasta de cubierta |
 | Estética | «Ojos de Venom» integrados al frontal |
 
-## 4 · Renders del modelo CAD
+## Renders del modelo CAD
 
 <p align="center">
   <img
     src="https://github.com/user-attachments/assets/b0e4dd90-7a49-449e-b8ce-1fe20d924a9c"
-    alt="image"
+    alt="Vista inferior del robot"
     width="461"
   />
 </p>
 
-*Figura 1. Vista inferior — cavidad de la placa de latón, ventanas de sensores QTR (frontal inferior) y rines de aluminio.*
-
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5db721bd-d1c4-49b4-a9c5-20c46fb1627b"
-       alt="image"
-       width="461">
+  <em>Figura 1. Vista inferior — cavidad de la placa de latón, ventanas de sensores QTR (frontal inferior) y rines de aluminio.</em>
 </p>
 
-*Figura 2. Vista isométrica — compartimento de electrónica/batería, alojamiento de motores y rin de aluminio en el eje.*
+<p align="center">
+  <img
+    src="https://github.com/user-attachments/assets/5db721bd-d1c4-49b4-a9c5-20c46fb1627b"
+    alt="Vista isométrica del robot"
+    width="461"
+  />
+</p>
+
+<p align="center">
+  <em>Figura 2. Vista isométrica — compartimento de electrónica/batería, alojamiento de motores y rin de aluminio en el eje.</em>
+</p>
 
 ## Lista de materiales — costos (BOM)
 
