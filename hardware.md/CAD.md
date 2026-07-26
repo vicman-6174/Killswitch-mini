@@ -63,7 +63,7 @@ El chasis del robot se diseñó como una sola pieza, lo que reduce ensambles, to
 
 | # | Componente | Modelo | Prov. | Cant. | P. unit. | Subtotal (MXN) | Notas |
 |--:|---|---|---|:--:|--:|--:|---|
-| 1 | Motor CC Core 6V 750 rpm | JS16661 | JSumo | 2 | 16 USD | 558.40 | Agotado en JSumo al 16-jul-2026 |
+| 1 | Motor CC Core 6V 400 rpm | JS16661 | JSumo | 2 | 16 USD | 558.40 | Agotado en JSumo al 16-jul-2026 |
 | 2 | Par de ruedas aluminio-silicón | JS2622 | JSumo | 1 par | 12.95 USD | 225.98 | El renglón es un par (2 ruedas) |
 | 3 | Sensor IR digital 40 cm | JS40F | JSumo | 5 | 12.50 USD | 1,090.63 | Detección de oponente |
 | 4 | Sensor de contraste/borde QTR-1A | JS15435 | JSumo | 2 | 2.40 USD | 83.76 | Detección de línea blanca |
