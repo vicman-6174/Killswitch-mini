@@ -35,11 +35,7 @@ El chasis del robot se diseñó como una sola pieza, lo que reduce ensambles, to
 ## Renders del modelo CAD
 
 <p align="center">
-  <img
-    src="https://github.com/user-attachments/assets/b0e4dd90-7a49-449e-b8ce-1fe20d924a9c"
-    alt="Vista inferior del robot"
-    width="461"
-  />
+  <img width="511" height="516" alt="image" src="https://github.com/user-attachments/assets/c3a78eb1-deed-4d0d-ae96-a017780ed120" />
 </p>
 
 <p align="center">
@@ -47,11 +43,7 @@ El chasis del robot se diseñó como una sola pieza, lo que reduce ensambles, to
 </p>
 
 <p align="center">
-  <img
-    src="https://github.com/user-attachments/assets/5db721bd-d1c4-49b4-a9c5-20c46fb1627b"
-    alt="Vista isométrica del robot"
-    width="461"
-  />
+  <img width="627" height="412" alt="image" src="https://github.com/user-attachments/assets/0dbd8835-77be-444a-85fa-f713508931e5" />
 </p>
 
 <p align="center">
