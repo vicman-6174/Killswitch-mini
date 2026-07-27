@@ -46,6 +46,9 @@ El chasis del robot se diseñó como una sola pieza, lo que reduce ensambles, to
   <em>Figura 2. Vista isométrica — compartimento de electrónica/batería, alojamiento de motores y rin de aluminio en el eje.</em>
 </p>
 
+Aquí se presenta también el link de onshape:
+https://cad.onshape.com/documents/2282cbfc23f7331e700f5a1f/w/38dd520f38907585979503e1/e/752de66a01a38daa3507c56f?renderMode=0&uiState=6a5836e0c09dcd09478d2d1f
+
 ## Lista de materiales — costos (BOM)
 
 
